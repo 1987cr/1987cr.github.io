@@ -46,3 +46,35 @@ section .description{
 .fc .fc-image-masked {
     background-position: top;
 }
+
+@keyframes gradientFadeOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #63b6db 0%, #d132a9 100%);
+}
+
+header::before {
+  background: linear-gradient(135deg, #5fce80 0%, #309dcf 100%);
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  -webkit-animation: gradientFadeOut 10s linear infinite;
+  -moz-animation: gradientFadeOut 10s linear infinite;
+  -ms-animation: gradientFadeOut 10s linear infinite;
+  -o-animation: gradientFadeOut 10s linear infinite;
+  animation: gradientFadeOut 10s linear infinite;
+}
