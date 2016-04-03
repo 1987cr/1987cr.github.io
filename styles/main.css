@@ -12,6 +12,10 @@ section{
 	background-color: #ececec;
 }
 
+section:nth-child(odd){
+	background-color: #dddddd;
+}
+
 @media (max-width: 767px){
 	section{
 		padding: 20px;
