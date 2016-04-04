@@ -14,6 +14,38 @@ h3{
 	font-weight: 400;
 	margin-bottom: 30px;
 }
+
+/* Side Menu */
+
+.st-container{
+	overflow: hidden;
+}
+
+.st-menu{
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 300px;
+	z-index: 1;
+	background-color: #333;
+	box-shadow: inset 4px 0px 12px 2px rgba(0,0,0,.4);
+}
+
+.st-pusher{
+	position: relative;
+	left: 0;
+	z-index: 99;
+	height: 100%;
+	perspective: 1000px;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.st-container.st-menu-open .st-pusher{
+	-webkit-transform: translate3d(300px, 0, 0);
+	transform: translate3d(-300px, 0px, 0px);
+}
 /* Header */
 
 @keyframes gradientFadeOut {
@@ -21,7 +53,7 @@ h3{
     opacity: 0;
   }
   50% {
-    opacity: 1;
+    opacity: .5;
   }
   100% {
     opacity: 0;
@@ -29,13 +61,16 @@ h3{
 }
 
 header {
+position: relative;
   height: 700px;
   width: 100%;
-  background: linear-gradient(135deg, #63b6db 0%, #d132a9 100%);
+  background: url("../images/bg.png");
+  	z-index: -2;
+  	background-size: cover;
 }
 
 header::before {
-  background: linear-gradient(135deg, #5fce80 0%, #309dcf 100%);
+  background: linear-gradient(135deg, #8823de 0%, #00AFFF 100%);
   display: block;
   width: 100%;
   height: 700px;
@@ -46,17 +81,57 @@ header::before {
   -ms-animation: gradientFadeOut 10s linear infinite;
   -o-animation: gradientFadeOut 10s linear infinite;
   animation: gradientFadeOut 10s linear infinite;
+  z-index: -1;
 }
 
+header .logo-header{
+	position: absolute;
+	width: 500px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+header .open-menu{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 1em;
+	padding: 0;
+	width: 2.5em;
+	height: 2.25em;
+	border: none;
+	text-indent: 2.5em;
+	font-size: 1.5em;
+	color: transparent;
+	background: transparent;
+}
+
+header .open-menu::before{
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+	bottom: 0.5em;
+	left: 0.5em;
+	background: linear-gradient(#fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%);
+	content: '';
+}
 /* Portfolio */
 
 section{
 	padding: 50px;
-	background-color: #f0f0f0;
+	background-color: #fff;
+	position: relative;
 }
 
 section:nth-child(odd){
-	background-color: #e5e5e5;
+	background-color: #f6f4f8;
+	z-index: -1;
+	box-shadow: 0px -8px 8px -4px rgba(0, 0, 0, 0.05) inset;
+}
+
+section:nth-child(even){
+	box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 767px){
