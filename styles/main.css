@@ -78,7 +78,7 @@ p{
 
 header {
 position: relative;
-  height: 100vh;
+  height: 300px;
   width: 100%;
   background: #00AFFF;
   background: url(../images/bg2.png);
@@ -90,7 +90,7 @@ header::before {
   background: rgba(0,0,0,.1);
   display: block;
   width: 100%;
-  height: 100vh;
+  height: 300px;
   content: '';
   position: absolute;
 /*  -webkit-animation: gradientFadeOut 10s linear infinite;
