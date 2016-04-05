@@ -11,7 +11,7 @@ html, body {
 
 h3,h4{
 	font-family: "Bitter";
-	color: #1F1F26;
+	color: #5a5a5a;
 }
 
 h4{
@@ -29,8 +29,57 @@ p{
 	font-size: 18px;
 	line-height: 1.5;
 	font-weight: 200;
+	color: #5a5a5a;
 }
 
+.btn{
+	position: relative;
+	border-radius: 0px;
+	font-size: 17px;
+	font-weight: 400;
+	padding: 8px 21px;
+	color: #00AFFF;
+	border: 1px solid #00AFFF;
+	overflow: hidden;
+	background-color: transparent;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 0;
+	top: 50%;
+	left: 50%;
+	background: #00AFFF;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+	color: #fff;
+}
+
+.btn:hover:after {
+	height: 260%;
+	opacity: 1;
+}
+
+.btn:active:after {
+	height: 400%;
+	opacity: 1;
+}
 /* Side Menu */
 
 .st-container{
@@ -78,7 +127,7 @@ p{
 
 header {
 position: relative;
-  height: 300px;
+  height: 100vh;
   width: 100%;
   background: #00AFFF;
   background: url(../images/bg2.png);
@@ -90,7 +139,7 @@ header::before {
   background: rgba(0,0,0,.1);
   display: block;
   width: 100%;
-  height: 300px;
+  height: 100vh;
   content: '';
   position: absolute;
 /*  -webkit-animation: gradientFadeOut 10s linear infinite;
@@ -139,11 +188,12 @@ section{
 	padding: 50px;
 	background-color: #fff;
 	position: relative;
+	z-index: -2;
 }
 
 section:nth-child(odd){
 	background-color: #f6f4f8;
-	z-index: -1;
+	z-index: -3;
 	box-shadow: 0px -8px 8px -4px rgba(0, 0, 0, 0.05) inset;
 }
 
