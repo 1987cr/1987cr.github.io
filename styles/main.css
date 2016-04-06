@@ -106,6 +106,7 @@ p{
 	height: 400%;
 	opacity: 1;
 }
+
 /* Side Menu */
 
 .st-container{
@@ -121,6 +122,21 @@ p{
 	z-index: 1;
 	background-color: #243042;
 	box-shadow: inset 4px 0px 12px 2px rgba(0,0,0,.4);
+}
+
+.st-menu ul{
+	list-style: none;
+	padding: 0;
+	border-top: 5px solid #2ec4b6;
+}
+
+.st-menu ul li{
+
+}
+
+.st-menu .sidebar-logo{
+	width: 100px;
+	margin: 1em;
 }
 
 .st-pusher{
@@ -153,6 +169,7 @@ p{
 .st-container.st-menu-open .st-pusher:after{
 	opacity: 1;
 }
+
 /* Header */
 
 @keyframes gradientFadeOut {
@@ -197,32 +214,6 @@ header .logo-header{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-}
-
-.open-menu{
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: .5em;
-	padding: 0;
-	width: 2.5em;
-	height: 2.25em;
-	border: none;
-	text-indent: 2.5em;
-	font-size: 1.3em;
-	color: transparent;
-	background: transparent;
-	z-index: 999;
-}
-
-.open-menu::before{
-	position: absolute;
-	top: 0.5em;
-	right: 0.5em;
-	bottom: 0.5em;
-	left: 0.5em;
-	background: linear-gradient(#b4b4b4 20%, transparent 20%, transparent 40%, #b4b4b4 40%, #b4b4b4 60%, transparent 60%, transparent 80%, #b4b4b4 80%);
-	content: '';
 }
 
 /* Portfolio */
@@ -353,4 +344,8 @@ section .description{
   top: 18px;
   width: 0%;
   left: 50%;
+}
+
+#nav-icon3.open span{
+  background: #fff;
 }
