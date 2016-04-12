@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/frame-carousel/jquery.frame-carousel.min.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -18,39 +19,61 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div id="nav-icon3">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
+    <nav class="topbar">
+      <img class="topbar__logo" src="images/logo-small.png" alt="">
+      <!-- Hamburger -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    
     <div class="st-container">
 
       <nav class="st-menu st-effect-1">
-        <ul>
-          <li>
-
+        <ul class="st-menu__list">
+          <li class="st-menu__list-item">
+            <a class="contact-link" href="http://codepen.io/carlosriera/" target="_blank">
+              <i class="fa fa-codepen"></i>
+              <p>CodePen</p>
+            </a>
           </li>
-          <li>
-            
+          <li class="st-menu__list-item">
+            <a class="contact-link" href="#" target="_blank">
+              <i class="fa fa-linkedin"></i>
+              <p>LinkedIn</p>
+            </a>
           </li>
-          <li>
-            
+          <li class="st-menu__list-item">
+            <a class="contact-link" href="https://github.com/1987cr" target="_blank">
+              <i class="fa fa-github"></i>
+              <p>Github</p>
+            </a>
           </li>
-          <li>
-            
-          </li>
-          <li>
-            
+          <li class="st-menu__list-item">
+            <a class="contact-link" href="mailto:1987cr@gmail.com" target="_blank">
+              <i class="fa fa-envelope-o"></i>
+              <p>1987cr@gmail.com</p>
+            </a>
           </li>
         </ul>
       </nav>
 
       <div class="st-pusher">
         
-        <header>
-          <img class="logo-header" src="images/logo_blanco.png" alt="">
+        <header class="header">
+          <div class="container header__container">
+            <div class="row header__row">
+              <div class="col-xs-12 header__col">
+                <div class="header__text-container">
+                  <h2 class="header__subheading">¡Hola! Me llamo Carlos Riera y soy</h2>
+                  <h1 class="header__heading">DESARROLLADOR WEB</h1>
+                </div>                
+              </div>
+            </div>
+          </div>
         </header>
 
         <section>
