@@ -172,6 +172,7 @@ var topbar = $(".topbar");
 var openmenubutton = $(".hamburger");
 var container = $(".st-container");
 var pusher = $(".st-pusher");
+var header = $(".header");
 
 openmenubutton.on("click", function(){
   topbar.toggleClass('open');
@@ -199,4 +200,12 @@ $(window).scroll(function(){
     $(".header__text-container")
     .css("opacity", tofade)
     .css("transform", toscroll);
+
+    if(scrolltop > header.outerHeight() - 72){
+      topbar.css("background-image","url(images/topbar-bg.png");
+      topbar.css("box-shadow","0px 3px 6px rgba(0,0,0,.3)");
+    }else{
+      topbar.css("background-image","none");
+      topbar.css("box-shadow","none");
+    }
 });
