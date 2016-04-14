@@ -186,10 +186,8 @@ pusher.on("click", function(){
     topbar.toggleClass('open');
     openmenubutton.toggleClass('open');
   }
-})
-/*$('#nav-icon3').click(function(){
-  $(this).toggleClass('open');
-});*/
+});
+
 $(window).scroll(function(){
 
     scrolltop = $(window).scrollTop();
@@ -202,7 +200,7 @@ $(window).scroll(function(){
     .css("transform", toscroll);
 
     if(scrolltop > header.outerHeight() - 72){
-      topbar.css("background-image","url(images/topbar-bg.png");
+      topbar.css("background-image","url(images/bg.jpg");
       topbar.css("box-shadow","0px 3px 6px rgba(0,0,0,.3)");
     }else{
       topbar.css("background-image","none");
