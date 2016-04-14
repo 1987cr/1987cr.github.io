@@ -208,6 +208,16 @@ p{
 	opacity: 1;
 }
 
+@media (max-width: 767px){
+	.st-menu{
+		width: 100px;
+	}
+
+	.st-container.st-menu-open .st-pusher{
+		-webkit-transform: translate3d(100px, 0, 0);
+		transform: translate3d(-100px, 0px, 0px);
+	}
+}
 /*****************************************************************************************************/
 /* Header                                                                                           
 ******************************************************************************************************/
@@ -345,8 +355,14 @@ p{
 	-moz-transition: background-image .25s ease-in-out;
 	-o-transition: background-image .25s ease-in-out;
 	transition: background-image .25s ease-in-out;
+	background-image: none;
 	background-position: top center;
 	background-size: cover;
+}
+
+.topbar.afterheader{
+	background-image: url(../images/bg.jpg);
+	box-shadow: 0px 3px 6px rgba(0,0,0,.3);
 }
 
 .topbar__logo{
