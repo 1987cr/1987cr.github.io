@@ -16,14 +16,15 @@ gulp.task('css', function(){
 		vars,
         nested,
         rucksack,
-        autoprefixer
+        autoprefixer,
+        cssnano
 	];
 
-	return gulp.src("./app/postcss/**/*.css")
+	return gulp.src("./postcss/**/*.css")
 	 	.pipe(sourcemaps.init())
 		.pipe(postcss(processors))
 		.pipe(sourcemaps.write())
-		.pipe(gulp.dest("./app/css"))
+		.pipe(gulp.dest("./styles"))
 		.pipe(browserSync.reload({
 	      stream: true
 	    }));
@@ -37,23 +38,23 @@ gulp.task('build', function(){
 	    cssnano
 	];
 
-	return gulp.src("./app/postcss/**/*.css")
+	return gulp.src("./postcss/**/*.css")
 		.pipe(postcss(processors))
-		.pipe(gulp.dest("./dist/css"));
+		.pipe(gulp.dest("./styles"))
 });
 
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: ''
     },
   })
 });
 
 gulp.task('watch', ['browserSync'], function(){
-	gulp.watch('app/postcss/**/*.css', ['css']); 
-	gulp.watch('app/*.html', browserSync.reload); 
-  	gulp.watch('app/js/**/*.js', browserSync.reload); 
+	gulp.watch('postcss/**/*.css', ['css']); 
+	gulp.watch('*.html', browserSync.reload); 
+  	gulp.watch('scripts/**/*.js', browserSync.reload); 
 });
 
 gulp.task("default", ["css"]);
