@@ -22,12 +22,6 @@ h3,h4,h5{
 	font-family: "Bitter";
 }
 
-h4{
-	font-size: 27px;
-	margin-bottom: 25px;
-	color: #00afff;
-}
-
 h5{
 	color: #5a5a5a;
 	margin-bottom: 0;
@@ -35,11 +29,17 @@ h5{
 	font-size: 21px;
 }
 
+h4{
+	font-size: 27px;
+	margin-bottom: 25px;
+	color: #007AB2;
+}
+
 h3{
 	font-size: 35px;
 	font-weight: 700;
 	margin-top: 0;
-	color: #0091D2;
+	color: #007AB2;
 }
 
 .portfolio__description-paragraph{
