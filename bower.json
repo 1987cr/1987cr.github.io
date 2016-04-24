@@ -1,8 +1,0 @@
-{
-  "name": "web-template",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "latest",
-    "modernizr": "~2.8.1"
-  }
-}
