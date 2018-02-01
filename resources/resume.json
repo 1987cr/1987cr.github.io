@@ -1,0 +1,150 @@
+{
+  "basics": {
+    "name": "Carlos Riera",
+    "label": "Software Developer",
+    "picture": "",
+    "email": "1987cr@gmail.com",
+    "phone": "+58 (426) 513-10-93",
+    "website": "http://1987cr.github.io",
+    "summary":
+      "Enthusiast about programming and learning new technologies. I'm a fast learner and new projects keep me motivated. Analytical, detail-oriented, mainly self-taught, love solving complex technical problems.",
+    "location": {
+      "city": "Caracas",
+      "countryCode": "Venezuela"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "url": "https://github.com/1987cr"
+      },
+      {
+        "network": "Codepen",
+        "url": "https://codepen.io/carlosriera/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Teravision Technologies",
+      "position": "Senior Full-Stack Developer",
+      "startDate": "2017-05-01",
+      "highlights": [
+        "Creation of web applications using ReactJs, Redux, ExpressJs, Firebase and MongoDB.",
+        "Creation of mobile applications using React Native.",
+        "Creation of strategies, in hand with the Project Manager, to organize the team in an optimal way each development sprint.",
+        "Perform Code Reviews",
+        "Implemented Git workflow for my teams.",
+        "Supported the management with the creation of time estimations for upcoming and prospective projects.",
+        "Supported the company interview process."
+      ]
+    },
+    {
+      "company": "Teravision Technologies",
+      "position": "Semi Senior Full-Stack Developer",
+      "startDate": "2016-08-01",
+      "endDate": "2017-04-01",
+      "highlights": [
+        "Creation of web applications using ReactJs, FabricJs, RaphaelJs, AngularJs 1.x, AdonisJs, ExpressJs, MySql, PostgreSql and MongodDB.",
+        "Implemented a Seat Map Creator using Canvas."
+      ]
+    },
+    {
+      "company": "Wikot",
+      "position": "Junior Web/Android Developer",
+      "startDate": "2015-10-01",
+      "endDate": "2016-08-01",
+      "highlights": [
+        "Creation of web applications using AngularJs, Laravel, Codeigniter, Yii2 and MySql.",
+        "Creation of layouts using Sass, PostCss, Bootstrap and jQuery",
+        "Creation of an Android application."
+      ]
+    },
+    {
+      "company": "Wikot",
+      "position": "Intern",
+      "startDate": "2015-10-01",
+      "endDate": "2016-08-01",
+      "highlights": [
+        "Creation of web applications using Codeigniter.",
+        "Creation of layouts using Sass, Bootstrap and jQuery"
+      ]
+    },
+    {
+      "company": "Freelance",
+      "position": "Web Developer",
+      "startDate": "2014-10-01",
+      "highlights": [
+        "Creation of several Web Pages and SPA's using Laravel, Codeigniter, Yii2, MysSql, AngularJs, jQuery, Bootstrap, Sass and Postcss"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Central de Venezuela",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2010-08-01",
+      "endDate": "2017-08-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Javascript",
+      "keywords": [
+        "ES6/ES7",
+        "ReactJs",
+        "Redux",
+        "React Native",
+        "NodeJs",
+        "AdonisJs",
+        "ExpressJs",
+        "AngularJs"
+      ]
+    },
+    {
+      "name": "Css",
+      "keywords": [
+        "Sass",
+        "PostCss",
+        "BEM",
+        "Bootstrap",
+        "Materialize",
+        "Material-UI"
+      ]
+    },
+    {
+      "name": "Databases",
+      "keywords": ["MySql", "PostgreSql", "MongoDB", "Firebase"]
+    },
+    {
+      "name": "PHP",
+      "keywords": ["Laravel 5.*", "Yii2"]
+    },
+    {
+      "name": "Tools / Misc",
+      "keywords": [
+        "Webpack",
+        "Babel",
+        "Gulp",
+        "Grunt",
+        "Docker",
+        "Jira",
+        "GitKraken",
+        "VsCode",
+        "MysqlWorkbench",
+        "Robomongo",
+        "PgAdmin"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native or bilingual proficiency"
+    },
+    {
+      "language": "English",
+      "fluency": "Full professional proficiency"
+    }
+  ]
+}
